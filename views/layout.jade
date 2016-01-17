@@ -1,0 +1,51 @@
+//- layout.jade
+doctype html
+html(lang='en')
+	head
+		block title
+		title Smart Hunter
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+		link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
+		link(rel='stylesheet', href='/css/watson-bootstrap-dark.css')
+		link(rel="stylesheet", href="/css/font-awesome.min.css")
+		link(rel='stylesheet', href='/css/style.css')
+
+		script(type='text/javascript', src='/js/jquery-1.11.1.min.js')
+		script(type='text/javascript', src='/js/d3.v2.min.js')
+
+		block specificJS 
+
+	body
+
+		div.container
+
+			div.row.nav.top-nav(style='background-color: #004468;')
+				div.col-lg-3
+					a.left(href='/')
+						img.chh_logo(src='/images/logo-transp.png')
+				div.col-lg-9
+					ul.nav.navbar-nav.right.hidden-xs
+						li 
+							a(href="/") Home
+						li 
+							a(href="/about") About
+					ul.nav.navbar-nav.nav-pills.right.visible-xs
+						li 
+							a(href="/")
+								span.fa.fa-home
+						li 
+							a(href="/about")
+								span.fa.fa-info
+
+			div.row.modal-content#modal(style='padding:10px;margin-top:10px;margin-bottom:10px; min-height: 600px;')
+				block content
+
+			block home-content
+
+			div.footer(style='padding:20px;')
+				p.text-center
+					a(href="http://smart-hunter.au-syd.mybluemix.net", target="_blank") @2016

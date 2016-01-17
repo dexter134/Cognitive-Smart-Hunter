@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23df01a6-c40d-44dd-92a1-306ef892cd3b}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="README.md" />
+    <Compile Include="app.js" />
+    <Compile Include="config\bluemix.js" />
+    <Compile Include="config\config.js" />
+    <Compile Include="config\db.js" />
+    <Compile Include="config\express.js" />
+    <Compile Include="config\personality-insights.js" />
+    <Compile Include="controllers\parser.js" />
+    <Content Include="views\about.jade" />
+    <Content Include="views\analyze-jobs.jade" />
+    <Content Include="views\analyze.jade" />
+    <Content Include="views\home.jade" />
+    <Content Include="views\import-jobs.jade" />
+    <Content Include="views\job-dashboard.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\manage.jade" />
+    <Content Include="views\req-concepts.jade" />
+    <Content Include="views\tos.jade" />
+    <Content Include="views\user-dashboard.jade" />
+    <Content Include="public\css\font-awesome.css" />
+    <Content Include="public\css\font-awesome.min.css" />
+    <Content Include="public\css\style.css" />
+    <Content Include="public\css\watson-bootstrap-dark.css" />
+    <Content Include="public\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\images\adrian.png" />
+    <Content Include="public\images\ci.png" />
+    <Content Include="public\images\Cognitive-Head-Hunter-white.png" />
+    <Content Include="public\images\Cognitive-Head-Hunter.png" />
+    <Content Include="public\images\forkme.png" />
+    <Content Include="public\images\globe_green.png" />
+    <Content Include="public\images\linkedin.png" />
+    <Content Include="public\images\logo-transp.png" />
+    <Content Include="public\images\miguel.png" />
+    <Content Include="public\images\pi.png" />
+    <Content Include="public\images\screenshot.png" />
+    <Content Include="public\images\Sign-In-Large---Default.png" />
+    <Content Include="public\images\user.png" />
+    <Content Include="public\images\ibmpos_blue.jpg" />
+    <Content Include="public\images\ibm_watson.jpg" />
+    <Content Include="public\images\logo-black.jpg" />
+    <Content Include="public\images\logo-blue.jpg" />
+    <Content Include="public\images\watson.gif" />
+    <Content Include="public\images\favicon.ico" />
+    <Compile Include="public\js\analyze.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\candidatesearch.js" />
+    <Compile Include="public\js\d3.v2.min.js" />
+    <Compile Include="public\js\demo.js" />
+    <Compile Include="public\js\jquery-1.11.1.min.js" />
+    <Compile Include="public\js\jquery.circliful.min.js" />
+    <Compile Include="public\js\manage.js" />
+    <Compile Include="public\js\personality.js" />
+    <Compile Include="public\js\req-concepts.js" />
+    <Compile Include="public\js\textsummary.js" />
+    <Compile Include="public\js\validator.min.js" />
+    <Content Include="public\json\facets.json" />
+    <Content Include="public\json\needs.json" />
+    <Content Include="public\json\traits.json" />
+    <Content Include="public\json\values.json" />
+    <Content Include="public\images\personas\alice.png" />
+    <Content Include="public\images\personas\brian.png" />
+    <Content Include="public\images\personas\danielle.png" />
+    <Content Include="public\images\personas\frank.png" />
+    <Content Include="public\images\personas\lisa.png" />
+    <Content Include="public\images\personas\mike.png" />
+    <Content Include="public\images\personas\paul.png" />
+    <Content Include="public\images\personas\ramy.png" />
+    <Content Include="public\images\personas\roslyn.png" />
+    <Content Include="public\images\personas\tony.png" />
+    <Content Include="public\images\personas\victor.png" />
+    <Content Include="public\user\images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config" />
+    <Folder Include="controllers" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\fonts" />
+    <Folder Include="public\images" />
+    <Folder Include="public\images\personas" />
+    <Folder Include="public\js" />
+    <Folder Include="public\json" />
+    <Folder Include="public\user" />
+    <Folder Include="public\user\images" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
